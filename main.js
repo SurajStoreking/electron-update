@@ -87,7 +87,7 @@ function createWindow() {
           appUpdater();
         }});
 
-
+        
     contents.webContents.on('did-finish-load', function() {
         let scriptCode = "";
         var scriptUrl = configUrl + "/myscript.js";

@@ -1,26 +1,19 @@
 {
-  "name": "sk-desktop",
+  "name": "sk_webview_desktop",
   "version": "1.1.0",
-  "description": "a storeking product",
+  "description": "",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build-linux": "electron-packager . app --platform linux --arch x64 --out dist/",
-    "setup-linux": "electron-installer-debian --src dist/app-linux-x64/ --dest dist/installers/ --arch amd64",
-    "build-win": "electron-packager . app --platform win32 --arch x64 --out dist/",
-    "setup-win": "electron-installer-windows --src dist/app-win32-x64/ --dest dist/installers/"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "storeking",
+  "author": "",
   "license": "ISC",
   "devDependencies": {
     "electron": "^1.7.10",
     "electron-is-dev": "^0.3.0",
     "electron-packager": "^8.7.0",
-    "electron-squirrel-startup": "^1.0.0",
-    "electron-installer-windows": "*",
-    "electron-installer-debian": "*",
-    "electron-prebuilt": "*"
+    "electron-squirrel-startup": "^1.0.0"
   },
   "dependencies": {
     "request-promise": "^4.2.2"
