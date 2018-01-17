@@ -1,0 +1,25 @@
+{
+  "name": "sk-desktop",
+  "version": "1.1.0",
+  "description": "a storeking product",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "electron-packager . app --platform linux --arch x64 --out dist/",
+    "setup": "electron-installer-debian --src dist/app-linux-x64/ --dest dist/installers/ --arch amd64"
+  },
+  "author": "storeking",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^1.7.10",
+    "electron-is-dev": "^0.3.0",
+    "electron-packager": "^8.7.0",
+    "electron-squirrel-startup": "^1.0.0",
+    "electron-installer-windows": "*",
+    "electron-prebuilt": "*"
+  },
+  "dependencies": {
+    "request-promise": "^4.2.2"
+  }
+}
